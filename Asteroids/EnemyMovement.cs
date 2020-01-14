@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace Asteroids
-{
+
+
     
         public class EnemyMovement : MonoBehaviour
         {
@@ -30,5 +30,5 @@ namespace Asteroids
                 transform.position = transform.position + (delta * moveSpeed);
             }
         }
-    }
+    
 
