@@ -59,10 +59,8 @@ public class GameController : MonoBehaviour
 
         }
 
-        // Процедура уменьшения количества врагов в переменной
-
-
     }
+    // Процедура уменьшения количества врагов в переменной
     public void KilledEnemy()
     {
         currentNumberOfEnemies--;

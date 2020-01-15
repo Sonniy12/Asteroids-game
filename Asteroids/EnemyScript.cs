@@ -10,6 +10,7 @@ public class EnemyScript : MonoBehaviour
     // Анимация при уничтожении объекта
     public Transform explosion;
 
+    //Проверяем коллизию с объектом типа «лазер»
     void OnCollisionEnter2D(Collision2D theCollision)
     {
         if (theCollision.gameObject.name.Contains("laser"))
@@ -27,7 +28,7 @@ public class EnemyScript : MonoBehaviour
                 Destroy(exploder, 2.0f);
             }
 
-
+            // функция уничтожения врага
             Destroy(this.gameObject);
             GameController controller = GameObject.FindGameObjectWithTag("GameController").GetComponent("GameController") as GameController;
             controller.KilledEnemy();
